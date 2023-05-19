@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         ('Issue', '0001_initial'),
         ('User', '0001_initial'),
     ]
-
+ 
     operations = [
         migrations.AddField(
             model_name='issue',

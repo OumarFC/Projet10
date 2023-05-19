@@ -21,3 +21,5 @@ class Migration(migrations.Migration):
             field=models.ForeignKey(on_delete=django.db.models.deletion.RESTRICT, related_name='project_created_by', to=settings.AUTH_USER_MODEL),
         ),
     ]
+
+

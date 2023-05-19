@@ -31,7 +31,7 @@ class UserSerializer(serializers.ModelSerializer):
         user.set_password(validated_data["password"])
         user.save()
         return user
-
+ 
 
 class ContributorSerializer(serializers.ModelSerializer):
 
@@ -46,7 +46,7 @@ class ContributorSerializer(serializers.ModelSerializer):
         user = self.context['request'].user
         if user == value:
             raise serializers.ValidationError(
-                "L'auteur du projet ne peut pas être contributeur")
+                "L'auteur du projet ne peut être contributeur")
         return value
 
     def create(self, validated_data):
